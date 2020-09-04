@@ -1,0 +1,22 @@
+<!-- Program to search for element in a array of string -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2/Task</title>
+</head>
+<body>
+    <h3>Program to search for particular character in a string</h3>
+    <input id="button1" type="button" value="SearchForCharacter" onclick="SearchForCharacter()">
+    <p id="display"></p>
+    <script>
+        function SearchForCharacter(){
+            var str=["program to search","for a element in a","array of string"];
+            var search=str.includes("array of string");            
+            // var search=str.search("array of string");            
+            document.getElementById("display").innerHTML=search;
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Print array in reverse Order</h2> 
+    <input id="button1" type="button" value="ReverseArray" onclick="ReverseArray()"/> 
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <script>  
+    var array=["one","Two","Three"];
+    document.getElementById("display1").innerHTML="Before Array:"+array;
+    function ReverseArray(){
+        var rev=array.reverse();
+        document.getElementById("display2").innerHTML="After Array:"+rev;
+    }
+    </script>  
+</body>
+</html>
